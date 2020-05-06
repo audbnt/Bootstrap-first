@@ -1,0 +1,10 @@
+[class*="col"]{
+    background-color:#DD5555;
+    color: #ffffff;
+}
+
+
+img {
+	max-width: 100%;
+	display: block;
+}

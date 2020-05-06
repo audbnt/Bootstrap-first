@@ -1,0 +1,14 @@
+/* La colonne de chat mesure au minimum 400px de haut, sinon plus vraiment utilisable.
+Sinon, elle fait toute la hauteur du viewport.
+A partir de 768px de large (tablette et plus), la colonne de chat mesure en hauteur : la hauteur du viewport - (la hauteur du header + sa marge)
+Dans l'idéal, on calcule ça en js */
+.chat {
+	min-height: 400px;
+	max-height: 100vh;
+}
+
+@media (min-width: 768px) {
+	.chat {
+		max-height: calc(100vh - 78px)
+	}
+}
